@@ -12,13 +12,15 @@ function ThreeAnimation() {
       transition={{ duration: 1.2, ease: "easeInOut" }}
       className="w-full h-full"
     >
-      <Canvas camera={{ fov: 55, near: 0.1, far: 100 }}>
+      <Canvas
+      style={{ background: "transparent" }} // Set the background to transparent
+       camera={{ fov: 55, near: 0.1, far: 100 }}>
         <EffectComposer>
           <Bloom
             mipmapBlur
             luminanceThreshold={0.55}
             luminanceSmoothing={0.7}
-            intensity={1}
+            intensity={0.15}
           />
           <Noise opacity={0.03} />
         </EffectComposer>
