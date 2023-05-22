@@ -44,11 +44,11 @@ export default function Document() {
           href="%PUBLIC_URL%/logo192.png"
         />
         <meta name="twitter:card" content="summary" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="My website title" />
-        <meta name="description" content="__DESCRIPTION__" />
-        <meta property="og:description" content="__DESCRIPTION__" />
-        <meta name="twitter:description" content="__DESCRIPTION__" />
+        <meta property="og:type" content="Mint Something" />
+        <meta property="og:title" content="Mint Something" />
+        <meta name="description" content="Mint Something" />
+        <meta property="og:description" content="Mint Something" />
+        <meta name="twitter:description" content="Mint Something" />
         <meta property="og:image" content="__IMG__" />
         <meta property="canonical" content="__URL__" />
         <meta property="og:url" content="__URL__" />
@@ -57,13 +57,13 @@ export default function Document() {
         <meta name="twitter:url" content="__URL__" />
         <meta property="keywords" content="__KEYWORDS__" />
 
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#090909" />
         <meta name="full-screen" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content="Business Books" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
-        <meta name="msapplication-navbutton-color" content="#000000" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#090909" />
+        <meta name="msapplication-navbutton-color" content="#090909" />
       </Head>
       <body>
         <Main />
