@@ -11,7 +11,7 @@ const GetStartedSuccessBox = () => {
       </p>
 
       <div className="flex justify-center mt-6">
-        <a href="#" className="__btn_outline">
+        <a href="https://twitter.com/mintsomethings" className="__btn_outline">
           Twitter
         </a>
       </div>
