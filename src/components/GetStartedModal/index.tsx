@@ -2,15 +2,14 @@ import Button from "@/components/Button";
 import GetStartedSuccessBox from "@/components/GetStartedSuccessBox";
 import { modalDefaultConfig } from "@/config/constants";
 import { SelectOption } from "@/config/types";
-import { AnimatePresence } from "framer-motion";
+import cx from "classnames";
+import { useFormik } from "formik";
 import { useEffect, useRef, useState } from "react";
 import ReactModal, { Props } from "react-modal";
+import * as Yup from "yup";
 import CloseIcon from "../Icons/CloseIcon";
 import MintSomethingIcon from "../Icons/MintSomethingIcon";
 import SelectComponent from "../SelectComponent";
-import * as Yup from "yup";
-import { useFormik } from "formik";
-import cx from "classnames";
 
 const options: SelectOption[] = [
   {
@@ -84,10 +83,10 @@ const GetStartedModal = (modalProps: Props) => {
       setTimeout(() => {
         setStatus("success");
 
-        setTimeout(() => {
-          formikHelpers.resetForm();
-          setStatus("idle");
-        }, 1500);
+        // setTimeout(() => {
+        //   formikHelpers.resetForm();
+        //   setStatus("idle");
+        // }, 1500);
       }, 1500);
     },
   });
