@@ -26,7 +26,7 @@ const Header = () => {
 
           <div className={cx("flex items-center gap-4")}>
             <Tooltip text="Go to Demo" keyboardCommand="D">
-              <Link className="__btn_outline peer" href={"#"}>
+              <Link className="__btn_outline peer" href={"https://bash.mintsomething.com"}>
                 Demo
                 <span className="text-[#70757E]">
                   <ArrowRight />

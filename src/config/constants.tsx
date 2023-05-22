@@ -56,12 +56,12 @@ export const modalDefaultConfig: Omit<
 export const socialIcons = [
   {
     icon: <GithubIcon />,
-    url: "#",
+    url: "https://github.com/beenhad",
     label: "GitHub",
   },
   {
     icon: <TwitterIcon />,
-    url: "#",
+    url: "https://twitter.com/mintsomethings",
     label: "Twitter",
   },
   // {

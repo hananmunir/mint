@@ -14,56 +14,44 @@ import cx from "classnames";
 
 const options: SelectOption[] = [
   {
-    label: "Banana",
-    value: "banana",
+    label: "Website Development",
+    value: "Website Development",
   },
   {
-    label: "Blueberry",
-    value: "blueberry",
+    label: "dApp Development",
+    value: "dApp Development",
   },
   {
-    label: "Grapes",
-    value: "grapes",
+    label: "NFT Artwork Generation",
+    value: "NFT Artwork Generation",
   },
   {
-    label: "Pineapple",
-    value: "pineapple",
+    label: "Token Creation",
+    value: "Token Creation",
   },
   {
-    label: "Aubergine",
-    value: "aubergine",
+    label: "Smart Contract Integration",
+    value: "Smart Contract Integration",
   },
   {
-    label: "Broccoli",
-    value: "broccoli",
+    label: "Smart Contract Audit",
+    value: "Smart Contract Audit",
   },
   {
-    label: "Carrot",
-    value: "carrot",
+    label: "Blockchain Consulting",
+    value: "Blockchain Consulting",
   },
   {
-    label: "Courgette",
-    value: "courgette",
+    label: "DeFi Applications",
+    value: "DeFi Applications",
   },
   {
-    label: "Leek",
-    value: "leek",
+    label: "ICO/STO Development",
+    value: "ICO/STO Development",
   },
   {
-    label: "Beef",
-    value: "beef",
-  },
-  {
-    label: "Chicken",
-    value: "chicken",
-  },
-  {
-    label: "Lamb",
-    value: "lamb",
-  },
-  {
-    label: "Pork",
-    value: "pork",
+    label: "Other",
+    value: "Other",
   },
 ];
 
