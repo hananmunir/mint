@@ -4,6 +4,7 @@ import ThreeAnimation from "@/components/ThreeAnimation";
 import { motion } from "framer-motion";
 import { useKey } from "react-use";
 
+
 const Home = () => {
   const { openGetStartedModal } = useOpenGetStartedModal();
 
