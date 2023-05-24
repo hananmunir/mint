@@ -11,6 +11,7 @@ import SelectComponent from "../SelectComponent";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import cx from "classnames";
+import supabase from "../../supabase";
 
 const options: SelectOption[] = [
   {
@@ -60,6 +61,16 @@ const validationSchema = Yup.object().shape({
   projectType: Yup.string().required().label("Project type"),
 });
 
+async function insertIntoSupabase(email:string, projectType:string): Promise<void>{
+  console.log("I am here");
+  const { data, error } = await supabase
+  .from('Client Inquiries')
+  .insert([
+    { "email": email, 'project_type': projectType },
+  ])
+}
+
+
 const GetStartedModal = (modalProps: Props) => {
   const emailInputRef = useRef<HTMLInputElement>(null);
   const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
@@ -80,7 +91,8 @@ const GetStartedModal = (modalProps: Props) => {
     },
     onSubmit(values, formikHelpers) {
       setStatus("loading");
-
+      console.log(values.email, values.projectType);
+      insertIntoSupabase(values.email, values.projectType);
       setTimeout(() => {
         setStatus("success");
 
@@ -131,7 +143,7 @@ const GetStartedModal = (modalProps: Props) => {
                 </h2>
 
                 <p className="text-sm text-slate-11 font-normal text-center max-w-[323px] mx-auto">
-                  Fill out the details below and our team will reach out to you
+                  Fill out the details below and our team will reach out to you 
                   as soon as possible.
                 </p>
               </div>
