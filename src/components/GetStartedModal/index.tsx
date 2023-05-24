@@ -10,8 +10,6 @@ import * as Yup from "yup";
 import CloseIcon from "../Icons/CloseIcon";
 import MintSomethingIcon from "../Icons/MintSomethingIcon";
 import SelectComponent from "../SelectComponent";
-
-import cx from "classnames";
 import supabase from "../../supabase";
 
 const options: SelectOption[] = [
