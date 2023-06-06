@@ -39,7 +39,7 @@ function ThreeAnimation() {
         >
           <Model />
         </Float>
-        {/* <Environment preset={"city"}></Environment> */}
+        <Environment preset={"sunset"}></Environment>
       </Canvas>
     </motion.div>
   );
