@@ -43,5 +43,5 @@
   "devDependencies": {
     "@types/react-modal": "^3.16.0"
   },
-  "proxy": "https://market-assets.fra1.cdn.digitaloceanspaces.com/"
+  "proxy": "https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/hdris/potsdamer-platz/"
 }
