@@ -10,11 +10,12 @@ function ThreeAnimation() {
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.2, ease: "easeInOut" }}
-      className="w-full h-full"
+      className='w-full h-full'
     >
       <Canvas
-      style={{ background: "transparent" }} // Set the background to transparent
-       camera={{ fov: 55, near: 0.1, far: 100 }}>
+        style={{ background: "transparent" }} // Set the background to transparent
+        camera={{ fov: 55, near: 0.1, far: 100 }}
+      >
         <EffectComposer>
           <Bloom
             mipmapBlur
@@ -38,7 +39,7 @@ function ThreeAnimation() {
         >
           <Model />
         </Float>
-        <Environment preset={"city"}></Environment>
+        {/* <Environment preset={"city"}></Environment> */}
       </Canvas>
     </motion.div>
   );
