@@ -39,7 +39,7 @@ function ThreeAnimation() {
         >
           <Model />
         </Float>
-        <Environment preset={"sunset"}></Environment>
+        <Environment files='/potsdamer_platz_1k.hdr'></Environment>
       </Canvas>
     </motion.div>
   );
